@@ -13,7 +13,7 @@ module "my_vpc" {
 module "my_ec2" {
   source        = "../modules/ec2"
   ec2_count     = 1
-  ami_id        = "ami-5a8da735"
+  ami_id        = "ami-010fae13a16763bb4"
   instance_type = "t2.micro"
   subnet_id     = "subnet-00e08f4c30ad51bf2"
 }
