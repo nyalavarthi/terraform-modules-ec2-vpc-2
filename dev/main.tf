@@ -15,5 +15,5 @@ module "my_ec2" {
   ec2_count     = 1
   ami_id        = "ami-010fae13a16763bb4"
   instance_type = "t2.micro"
-  subnet_id     = "subnet-00e08f4c30ad51bf2"
+  subnet_id     = "subnet-0950445cf74df8154"
 }
