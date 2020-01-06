@@ -3,7 +3,9 @@ resource "aws_vpc" "main" {
   instance_tenancy = "${var.tenancy}"
 
   tags = {
-    Name = "main"
+    Name        = "NY-test-EC2"
+    Environment = "Sandbox",
+    Owner       = "Narendra Yalavarthi"
   }
 }
 
@@ -12,7 +14,9 @@ resource "aws_subnet" "main" {
   cidr_block = "${var.subnet_cidr}"
 
   tags = {
-    Name = "Main"
+    Name        = "NY-test-EC2"
+    Environment = "Sandbox",
+    Owner       = "Narendra Yalavarthi"
   }
 }
 
