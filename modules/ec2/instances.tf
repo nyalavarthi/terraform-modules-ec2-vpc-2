@@ -5,6 +5,8 @@ resource "aws_instance" "web" {
   subnet_id     = "${var.subnet_id}"
 
   tags = {
-    Name = "HelloWorld"
+    Name        = "NY-test-EC2"
+    Environment = "Sandbox",
+    Owner       = "Narendra Yalavarthi"
   }
 }
