@@ -1,15 +1,15 @@
 provider "aws" {
   region = "eu-central-1"
 }
-
+/*
 module "my_vpc" {
   source      = "../modules/vpc"
-  vpc_cidr    = "10.143.106.0/25"
+  vpc_cidr    = "0.0.0.0/25"
   tenancy     = "default"
   vpc_id      = "${module.my_vpc.vpc_id}"
-  subnet_cidr = "10.143.106.0/25"
+  subnet_cidr = "0.0.0.0/0"
 }
-
+*/
 module "my_ec2" {
   source        = "../modules/ec2"
   ec2_count     = 1
